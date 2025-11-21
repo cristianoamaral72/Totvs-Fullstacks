@@ -1,0 +1,29 @@
+// .loader {
+//     width: 100%;
+//     height: 100%;
+//     z-index: 99;
+//     background: #FFFFFF;
+//     opacity: 0.8;
+//     position: fixed;
+//     top: 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; // Certifique-se de que o loader esteja acima dos outros elementos da UI
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mat-spinner {
+    width: 80px;
+    height: 80px; // Tamanho ajustável para melhorar a visibilidade
+  }
+  

@@ -1,0 +1,45 @@
+<mat-card>
+  <h2>{{ isEdit ? 'Editar Produto' : 'Novo Produto' }}</h2>
+
+  <div *ngIf="loading">Carregando...</div>
+  <div *ngIf="error" class="error">{{ error }}</div>
+
+  <form [formGroup]="form" (ngSubmit)="save()" *ngIf="!loading">
+    <mat-form-field appearance="outline" class="full">
+      <mat-label>Nome</mat-label>
+      <input matInput formControlName="name">
+      <mat-error *ngIf="f['name'].touched && f['name'].invalid">
+        Nome é obrigatório (máx. 100 caracteres).
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full">
+      <mat-label>Descrição</mat-label>
+      <textarea matInput formControlName="description"></textarea>
+    </mat-form-field>
+
+<div class="form-grid">
+  <mat-form-field appearance="outline" class="half">
+    <mat-label>Preço</mat-label>
+    <input matInput type="number" formControlName="price" step="0.01">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="half">
+    <mat-label>Estoque</mat-label>
+    <input matInput type="number" formControlName="stockQuantity">
+  </mat-form-field>
+</div>
+
+
+    <mat-checkbox formControlName="active">Ativo</mat-checkbox>
+
+    <div class="actions">
+      <button mat-raised-button color="primary" type="submit">
+        {{ isEdit ? 'Salvar' : 'Criar' }}
+      </button>
+      <button mat-raised-button color="warn" type="button" (click)="cancel()">
+        Cancelar
+      </button>
+    </div>
+  </form>
+</mat-card>

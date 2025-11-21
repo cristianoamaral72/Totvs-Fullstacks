@@ -1,0 +1,78 @@
+mat-card {
+  padding: 2.5rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+}
+
+/* Título */
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  color: #444;
+}
+
+/* GRID dos dois campos lado a lado */
+.form-grid {
+  display: flex;
+  gap: 2%;
+  width: 100%;
+}
+
+/* Campos */
+.full {
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.half {
+  width: 49%;
+  margin-bottom: 1.2rem;
+}
+
+/* Checkbox */
+mat-checkbox {
+  margin: 1rem 0;
+  font-size: 15px;
+}
+
+/* Ações */
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+
+  button {
+    min-width: 130px;
+    height: 42px;
+    border-radius: 25px;
+    font-weight: 600;
+  }
+}
+
+/* Erros */
+.error {
+  color: #c62828;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .form-grid {
+    flex-direction: column;
+  }
+
+  .half {
+    width: 100%;
+  }
+
+  mat-card {
+    margin: 1rem;
+    padding: 1.8rem;
+  }
+}

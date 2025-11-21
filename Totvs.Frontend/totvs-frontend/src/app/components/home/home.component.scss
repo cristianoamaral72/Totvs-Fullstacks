@@ -1,0 +1,53 @@
+.home-card {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 3rem;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+
+  mat-icon {
+    font-size: 38px;
+    color: #5c007a;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+  }
+}
+
+.subtitle {
+  margin-top: 8px;
+  margin-bottom: 2rem;
+  font-size: 16px;
+  color: #666;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  button {
+    min-width: 160px;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+
+    mat-icon {
+      margin-right: 6px;
+    }
+  }
+}

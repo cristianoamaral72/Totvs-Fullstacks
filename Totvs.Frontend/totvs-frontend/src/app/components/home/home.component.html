@@ -1,0 +1,22 @@
+<mat-card class="home-card">
+  <div class="header">
+    <mat-icon class="home-icon">home</mat-icon>
+    <h1>Bem-vindo ao Sistema de Produtos TOTVS</h1>
+  </div>
+
+  <p class="subtitle">
+    Escolha uma das opções abaixo para navegar pelas funcionalidades.
+  </p>
+
+  <div class="actions">
+    <button mat-raised-button color="primary" (click)="goToProducts()">
+      <mat-icon>inventory_2</mat-icon>
+      Produtos
+    </button>
+
+    <button mat-raised-button color="accent" (click)="goToNewProduct()">
+      <mat-icon>add_box</mat-icon>
+      Novo Produto
+    </button>
+  </div>
+</mat-card>

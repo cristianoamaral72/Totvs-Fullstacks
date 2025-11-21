@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+table {
+  width: 100%;
+}
+
+.empty {
+  text-align: center;
+  padding: 2rem;
+  color: #777;
+}

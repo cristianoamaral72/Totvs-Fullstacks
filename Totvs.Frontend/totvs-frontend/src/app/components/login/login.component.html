@@ -1,0 +1,33 @@
+<app-loader [visibility]="loader"></app-loader>
+<div class="login">
+  <div class="box-left">
+    <img src="assets/images/totvs-image.png" width="300" height="300" alt="Logo">
+  </div>
+  <div class="box-right">
+    <div class="box-form">
+      <form [formGroup]="formularioLogin" novalidate>
+        <div class="form-group">
+          <mat-form-field appearance="fill">
+            <mat-label>Usuário</mat-label>
+            <input formControlName="username" matInput placeholder="Usuário" />
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field appearance="fill">
+            <mat-label>Senha</mat-label>
+            <input formControlName="password" matInput type="password" placeholder="Senha" />
+          </mat-form-field>
+        </div>
+        <div class="login-links">
+          <a [routerLink]="['/inicial/reseta-senha']">Esqueci Minha Senha</a>
+          <span class="versao">Versão 1.0.1 - DESENV</span>
+        </div>
+
+        <br />
+        <div class="text-center">
+          <button type="button" class="btn btn-totvs mx-auto" (click)="login()">ENTRAR</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
